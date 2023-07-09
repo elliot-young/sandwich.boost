@@ -1,0 +1,33 @@
+Package: sandwich.boost
+Type: Package
+Title: Sandwich Boosting for Estimation of Linear Coefficients in the Grouped Partially Linear Regression Model
+Version: 0.1.0
+Author: Elliot H. Young [aut, cre],
+  Rajen D. Shah [aut]
+Maintainer: Elliot H. Young <ey244@cam.ac.uk>
+Description: A boosting methodology to determine accurate weighted estimates of the linear coefficient in grouped partially linear models.
+    The linear component is estimated by first regressing a response and treatment (whose linear effect is of interest) on covariates using a chosen non-parametric / machine learning method, and then carrying out a subsequent weighted linear regression using these residuals. Weights are determined by minimising the sandwich loss objective with a choice of base learners for boosting over a given working covaraince model.
+    Details of the method can be found in Elliot H. Young and Rajen D. Shah (2023).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    caret (>= 6.0.93),
+    expm (>= 0.999.7),
+    glmnet (>= 4.1.6),
+    lme4 (>= 1.1.31),
+    mgcv (>= 1.8.41),
+    mlr (>= 2.19.1),
+    ranger (>= 0.14.1),
+    Rcpp,
+    stats (>= 4.2.2),
+    tuneRanger (>= 0.5)
+RoxygenNote: 7.2.3
+LinkingTo: 
+    Rcpp
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
