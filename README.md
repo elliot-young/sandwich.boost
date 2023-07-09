@@ -6,11 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The *sandwich.boost* package to perform accurate weighted least squares estimation of the linear coefficient in grouped partially linear models in *R*.
-
-## Installation
-
-You can install the development version of sandwich.boost like so:
+The *sandwich.boost* package can be used to perform accurate weighted least squares estimation of the linear coefficient in grouped partially linear models in *R*, with weights determined via sandwich boosting.
 
 ## Installation
 
